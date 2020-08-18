@@ -1,4 +1,4 @@
-package me.tajam.lodestone_sanctuary;
+package me.tajam.mpp;
 
 import static org.junit.Assert.assertTrue;
 
