@@ -58,6 +58,9 @@ public class LodestoneSanctuaryListener extends PluginListener {
         player.setFireTicks(0);
         player.addPotionEffect(new PotionEffect(PotionEffectType.POISON, this.poisonTime, 1));
         player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, this.nauseaTime, 1));
+        if (!location.getChunk().isLoaded()) {
+          location.getChunk().load();
+        }
         player.teleport(location.add(new Vector(0, 1, 0)));
         world.playSound(location, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.BLOCKS, 2.0f, 1.5f);
       }
@@ -84,6 +87,9 @@ public class LodestoneSanctuaryListener extends PluginListener {
           player.setFireTicks(0);
           player.addPotionEffect(new PotionEffect(PotionEffectType.POISON, this.poisonTime, 1));
           player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, this.nauseaTime, 1));
+          if (!location.getChunk().isLoaded()) {
+            location.getChunk().load();
+          }
           player.teleport(location.add(new Vector(0, 5, 0)));
           world.playSound(location, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.BLOCKS, 2.0f, 0.5f);
         }
