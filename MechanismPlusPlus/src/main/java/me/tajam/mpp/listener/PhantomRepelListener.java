@@ -11,12 +11,10 @@ import org.bukkit.event.entity.EntityTargetEvent.TargetReason;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.tajam.mpp.configuration.ConfigReader;
-
 public class PhantomRepelListener extends PluginListener {
 
-  public PhantomRepelListener(JavaPlugin plugin, ConfigReader config) {
-    super(plugin, config);
+  public PhantomRepelListener(JavaPlugin plugin) {
+    super(plugin, null);
   }
 
   @EventHandler()

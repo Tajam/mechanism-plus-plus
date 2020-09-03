@@ -9,12 +9,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.tajam.mpp.configuration.ConfigReader;
-
 public class BeheadedListener extends PluginListener {
 
-  public BeheadedListener(JavaPlugin plugin, ConfigReader config) {
-    super(plugin, config);
+  public BeheadedListener(JavaPlugin plugin) {
+    super(plugin, null);
   }
 
   @EventHandler(priority = EventPriority.NORMAL)

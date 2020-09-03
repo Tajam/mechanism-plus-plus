@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.tajam.mpp.configuration.ConfigReader;
 import me.tajam.mpp.configuration.ConfigReaderGlobal;
 import me.tajam.mpp.listener.BeheadedListener;
+import me.tajam.mpp.listener.ElderGuardianPotionListener;
 import me.tajam.mpp.listener.ElytraNerfListener;
 import me.tajam.mpp.listener.PhantomRepelListener;
 import me.tajam.mpp.listener.LodestoneSanctuaryListener;
@@ -39,9 +40,10 @@ public class MPP extends JavaPlugin {
 
     LodestoneSanctuary sanctuary = new LodestoneSanctuary();
     new LodestoneSanctuaryListener(this, sanctuary, config);
-    new BeheadedListener(this, null);
-    new PhantomRepelListener(this, null);
+    new BeheadedListener(this);
+    new PhantomRepelListener(this);
     new ElytraNerfListener(this, config);
+    new ElderGuardianPotionListener(this);
 
   }
 
