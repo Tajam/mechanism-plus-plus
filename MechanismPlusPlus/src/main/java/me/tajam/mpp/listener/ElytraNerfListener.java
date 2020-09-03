@@ -55,7 +55,7 @@ public class ElytraNerfListener extends PluginListener {
   public void RocketBoostEvent(final PlayerInteractEvent event) {
     final Player player = event.getPlayer();
     final ItemStack usedItem = event.getItem();
-    if (player.isGliding() && usedItem.getType() == Material.FIREWORK_ROCKET && event.getAction() == Action.RIGHT_CLICK_AIR) {
+    if (player.isGliding() && usedItem != null && usedItem.getType() == Material.FIREWORK_ROCKET && event.getAction() == Action.RIGHT_CLICK_AIR) {
       final ItemStack elytra = player.getInventory().getChestplate();
       if (elytra != null && elytra.getType() == Material.ELYTRA) {
         final Damageable damageable = (Damageable) elytra.getItemMeta();
