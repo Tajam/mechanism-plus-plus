@@ -8,3 +8,4 @@ This is a [Spigot](https://www.spigotmc.org/) plugin built specifically for [MMU
 - Phantom will cannot target or attack player when holding a Crimson Fungus.
 - Player's head will drop when killed by a golden axe while wearing golden helmet.
 - Nerfed Elytra. Make Elytra easier to break. Applying rocket boost or Riptide will greatly damage Elytra. However Mending will repair twice as fast.
+- Player can now use a water (splash) potion on Elder Guardian to get Mining Fatigue (splash) potion.
