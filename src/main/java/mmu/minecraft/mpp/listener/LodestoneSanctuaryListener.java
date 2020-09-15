@@ -61,7 +61,7 @@ public class LodestoneSanctuaryListener extends PluginListener {
         if (!location.getChunk().isLoaded()) {
           location.getChunk().load();
         }
-        player.teleport(location.add(new Vector(0, 1, 0)));
+        player.teleport(location.add(new Vector(0.5f, 1.5f, 0.5f)));
         world.playSound(location, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.BLOCKS, 2.0f, 1.5f);
       }
     }
@@ -90,7 +90,7 @@ public class LodestoneSanctuaryListener extends PluginListener {
           if (!location.getChunk().isLoaded()) {
             location.getChunk().load();
           }
-          player.teleport(location.add(new Vector(0, 5, 0)));
+          player.teleport(location.add(new Vector(0.5f, 1.5f, 0.5f)));
           world.playSound(location, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.BLOCKS, 2.0f, 0.5f);
         }
       }
