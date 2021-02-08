@@ -1,5 +1,7 @@
 lower-health-required: 11.0
 nausea-length: 600
 poison-length: 600
+elytra-nerf-activate-player: 5
 elytra-damage-multiplier: 36
 elytra-boost-damage: 72
+elytra-mend-multiplier: 2

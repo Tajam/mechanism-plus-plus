@@ -15,6 +15,7 @@ public class ConfigReaderGlobal extends ConfigReader {
     new PoisonTime(section).register(this);
     new ElytraBoostDamage(section).register(this);
     new ElytraDamageMultiplier(section).register(this);
+    new ElytraMendMultiplier(section).register(this);
   }
   
 }

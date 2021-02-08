@@ -9,7 +9,9 @@ public abstract class Configuration<T> {
     POISON_TIME,
     NAUSEA_TIME,
     ELYTRA_DAMAGE_MULTIPLIER,
-    ELYTRA_BOOST_DAMAGE
+    ELYTRA_BOOST_DAMAGE,
+    ELYTRA_MEND_MULTIPLIER,
+    ELYTRA_NERF_ACTIVATE_PLAYER
   }
 
   protected ConfigurationSection section;
